@@ -8,24 +8,14 @@
     margin: 0;
 }
 
-.lcb-tabs {
-    border: 1px #333 solid;
-    border-top-color: #111;
-    border-left: none;
-    border-right: none;
-}
-
 .lcb-tab {
     height: 36px;
     line-height: 36px;
     font-size: 14px;
-    border: 1px #111 solid;
-    border-top-color: #333;
     display: block;
     position: relative;
     z-index: 1;
     .box-sizing(content-box);
-    .opacity(.7);
     &:after {
         background-color: transparent;
         width: 1px;
@@ -38,7 +28,7 @@
     }
     a {
         height: inherit;
-        color: #999;
+        color: #adafb2;
         text-decoration: none;
         padding-left: 10px;
         border-bottom: none;
@@ -47,18 +37,13 @@
         .transition(color .07s linear);
     }
     &:hover {
-        .opacity(.8);
         a {
-            color: #bbb;
+            color: #fff;
         }
     }
     &.selected {
-        background: #222;
-        padding-right: 1px;
-        margin-right: -1px;
-        border-right-color: transparent;
         &:after {
-            background: rgba(255, 255, 255, .9);
+            background: #fff;
         }
         a {
             color: #fff;
@@ -82,7 +67,7 @@
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     position: absolute;
     top: 10px;
-    right: 24px;
+    right: 27px;
     border-radius: 3px;
 }
 
@@ -107,16 +92,17 @@
 .lcb-tab-close {
     line-height: 32px;
     font-size: 20px;
-    color: #ccc;
+    color: #616161;
     position: absolute;
     top: 0;
-    right: 7px;
-    .transition(opacity .07s linear);
+    right: 10px;
+    .transition(color .07s linear);
     .opacity(0);
     &:hover {
         .opacity(1);
+        color: #fff;
     }
     .lcb-tab:hover & {
-        .opacity(.4);
+        .opacity(1);
     }
 }

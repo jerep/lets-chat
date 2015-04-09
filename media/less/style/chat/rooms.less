@@ -22,15 +22,8 @@
     padding: 10px;
     border-bottom: 1px #ddd solid;
     position: relative;
-    border-radius: 2px 2px 0 0;
     box-shadow: 0 4px 5px -5px rgba(0, 0, 0, .1);
     z-index: 1000;
-    @media (max-width: @screen-xs-max) {
-        padding: 5px 8px;
-    }
-    .lcb-room-sidebar-opened & {
-        border-radius: 2px 0 0 0;
-    }
 }
 
 .lcb-room-header-actions {
@@ -50,9 +43,6 @@
     padding-right: 35px;
     margin: 0;
     .flex-display;
-    @media (max-width: @screen-xs-max) {
-        font-size: 20px;
-    }
     .name,
     .slug {
         max-width: 50%;
@@ -161,7 +151,6 @@
     min-width: 160px;
     max-width: 240px;
     border-left: 1px #ddd solid;
-    border-radius: 0 3px 3px 0;
     .flex-display;
     .flex-direction(column);
     @media (max-width: @screen-sm-max) {
@@ -195,7 +184,6 @@
     min-height: inherit;
     line-height: 36px;
     padding: 0 10px;
-    border-radius: 3px 3px 0 0;
     border-bottom: 1px #ddd solid;
     position: relative;
 }

@@ -18,7 +18,7 @@
     min-height: 47px;
     border-top: 1px #eee solid;
     padding: @messagePadding;
-    font-size: 13px;
+    font-size: 14px;
     margin: 0;
     display: block;
     position: relative;
@@ -30,12 +30,6 @@
         margin-top: -@messagePadding / 2;
         border-top: none;
     }
-    &.lcb-message-own {
-        background: #fcffd8;
-    }
-    &.lcb-message-mentioned {
-        background: #ffe9ee;
-    }
     &.lcb-message-mentioned:before {
         background: #f22472;
         width: 3px;
@@ -46,11 +40,7 @@
         left: 0;
     }
     pre {
-        background: none;
-        border-width: 3px;
-        border-top: none;
-        border-bottom: none;
-        margin-bottom: 3px;
+        background: #f6f6f6;
     }
     .thumbnail {
         max-width: 100%;

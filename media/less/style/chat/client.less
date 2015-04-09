@@ -15,7 +15,7 @@
     -ms-transition: -ms-transform .1s ease;
     transition: transform .1s ease;
     @media (max-width: @screen-xs-max) {
-        padding-top: 43px;
+        padding-top: 52px;
         &.lcb-sidebar-opened {
             .translateX(200px);
             .modal {
@@ -26,26 +26,16 @@
 }
 
 .lcb-header {
-    background: #222;
+    background: #1c1c1c;
     width: 100%;
-    height: 43px;
+    height: 52px;
     text-align: center;
-    line-height: 44px;
+    line-height: 53px;
     position: fixed;
     top: 0;
     left: 0;
-    border-bottom: 1px #111 solid;
     z-index: 1;
     display: none;
-    &:after {
-        background-color: #333;
-        width: 100%;
-        height: 1px;
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-    }
     @media (max-width: @screen-xs-max) {
         display: block;
     }
@@ -56,7 +46,7 @@
     height: 30px;
     line-height: 100%;
     position: absolute;
-    top: 7px;
+    top: 11px;
     left: 7px;
     padding: 0;
     background-color: #c0c0c0;
@@ -73,7 +63,6 @@
     width: 200px;
     min-width: 200px;
     height: 100%;
-    border-right: 1px #333 solid;
     position: relative;
     z-index: 1;
     &:after {
@@ -98,21 +87,12 @@
     .flex-display;
 }
 
-.lcb-pane {
-    margin: 10px;
-    border: 1px #111 solid;
-    border-radius: 2px;
-    @media (max-width: @screen-xs-max) {
-        margin: 3px;
-    }
-}
-
 .lcb-account-button {
-    background: #222 url('../img/header.png');
-    height: 42px;
+    background: #1c1c1c;
+    height: 52px;
     line-height: 45px;
     color: #bbb;
-    padding: 0 6px;
+    padding: 4px 6px 0px 6px;
     display: block;
     position: relative;
     .user-select(none);
@@ -131,7 +111,7 @@
 .lcb-account-button-avatar {
     .size(32px);
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: 5px;
 }
 
